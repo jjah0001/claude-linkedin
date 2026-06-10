@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__playwright",
+      "Bash(npm audit *)",
+      "Bash(npm list *)",
+      "Bash(npm view *)",
+      "Bash(python3 -c \"import sys,json; vs=[v for v in json.load\\(sys.stdin\\) if not 'canary' in v and not 'beta' in v and not 'rc' in v and not 'alpha' in v]; print\\('latest stable:', vs[-1]\\)\")",
+      "Bash(python3 -c \"import sys,json; vs=[v for v in json.load\\(sys.stdin\\) if not 'canary' in v and not 'beta' in v and not 'rc' in v and not 'alpha' in v]; print\\('latest stable v4:', [v for v in vs if v.startswith\\('4.'\\)][-1]\\); print\\('latest stable:', vs[-1]\\)\")",
+      "Bash(git remote *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(git branch *)",
+      "Bash(git fetch *)",
+      "Bash(git merge *)"
+    ]
+  }
+}
